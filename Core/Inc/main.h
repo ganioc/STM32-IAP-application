@@ -36,7 +36,7 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
+#define APPLICATION_ADDRESS     (uint32_t)0x08006000
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/

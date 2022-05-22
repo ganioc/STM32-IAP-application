@@ -57,7 +57,7 @@
   */
 
 #include "stm32f1xx.h"
-
+#include "main.h"
 /**
   * @}
   */
@@ -186,7 +186,7 @@ void SystemInit (void)
   SCB->VTOR = VECT_TAB_BASE_ADDRESS | VECT_TAB_OFFSET; /* Vector Table Relocation in Internal SRAM. */
 #endif /* USER_VECT_TAB_ADDRESS */
 
-  SCB->VTOR = 0x08006000;
+  SCB->VTOR = APPLICATION_ADDRESS;
 
 }
 
