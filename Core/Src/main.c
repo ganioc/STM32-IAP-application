@@ -31,7 +31,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+uint32_t counter=0;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -109,6 +109,11 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  HAL_Delay(100);
 	  HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
+	  counter++;
+	  if(counter > 20){
+		  counter=0;
+		  printf("firm\r\n");
+	  }
   }
   /* USER CODE END 3 */
 }
